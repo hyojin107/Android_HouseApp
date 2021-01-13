@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:text="요리 백과"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold|italic"
+        android:textColor="#666666"
+        android:textAlignment="center"
+        android:typeface="serif" />
+
+    <FrameLayout
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignBottom="@+id/twoPage"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="54dp">
+
+
+        <!-- 딸기 -->
+        <TableLayout
+            android:id="@+id/strawberryTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+
+            <TableRow
+                android:id="@+id/strawButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/strawberry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberry"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/strawberrycake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberrycake"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/strawberrydonut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberrydonut"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/strawText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textstraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기" />
+
+                <TextView
+                    android:id="@+id/textstrawcake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기케이크" />
+
+                <TextView
+                    android:id="@+id/textstrawdonut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기도넛" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/strawButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/strawberryicecream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberryicecream"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/strawberryjam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberryjam"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/strawberryjelly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberryjelly"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/strawText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textstrawicecream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기아이스크림" />
+
+                <TextView
+                    android:id="@+id/textstrawjam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기잼" />
+
+                <TextView
+                    android:id="@+id/textstrawjelly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기맛젤리" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/strawButton3"
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/strawberryjuice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberryjuice"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/strawberrysnack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberrysnacks"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/strawberrytarte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/strawberrytart"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/strawText3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textstrawjuice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기주스" />
+
+                <TextView
+                    android:id="@+id/textstrawsnack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기과자" />
+
+                <TextView
+                    android:id="@+id/textstrawtarte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="딸기타르트" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- 토마토 -->
+        <TableLayout
+            android:id="@+id/tomatoTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/tomato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomato"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/tomatocan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatocan"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/tomatohamburger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatohamburger"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/texttomato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="토마토" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="토마토통조림" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="햄버거" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/tomatoketchup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatoketchup"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/tomatosalad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatosalad"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/tomatosalsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatosalsa"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="토마토케찹" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="샐러드" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="토마토살사" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/tomatosandwich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatosandwich"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/tomatosoupk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatosoup"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/tomatospaghetti"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/tomatospaghetti"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="샌드위치" />
+
+                <TextView
+                    android:id="@+id/textView122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="토마토수프" />
+
+                <TextView
+                    android:id="@+id/textView133"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="토마토스파게티" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- 포도 -->
+        <TableLayout
+            android:id="@+id/grapeTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/grape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/grape"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/grapecandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapecandy"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/grapeicecream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapeicecream"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포도" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포도맛사탕" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포도맛아이스크림" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/grapejam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapejam"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/grapejelly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapejelly"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/grapejuice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapejuice"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포도잼" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="미리구미" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포도피크" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/grapemuffin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapemuffin"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/grapewine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapewine"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/grapeyorfile"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/grapeyorfle"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포도향머핀" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="포도주" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="그릭요거트포도" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- 망고 -->
+        <TableLayout
+            android:id="@+id/mangoTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/mango"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mango"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/mangobingsu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangobingsu"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/mangocake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangocake"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고빙수" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고케이크" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/mangocandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangocandy"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/mangoicecream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangoicecream"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/mangojam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangojam"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고사탕" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고빙수" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고케이크" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/mangojelly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangojelly"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/mangojuice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangojuice"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/mangoyogurtsmoothie"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mangoyogurtsmoothie"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고맛젤리" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고피크" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="망고요거트스무디" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- 바나나 -->
+        <TableLayout
+            android:id="@+id/bananaTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/banana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/banana"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/bananabread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananabread"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/bananachip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananachip"
+                    android:gravity="bottom|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나빵" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나칩" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bananacrepe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananacrepe"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/bananaflanbe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananaflanbe"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/bananafried"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananafried"
+                    android:gravity="bottom|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나크라페" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나플랑베" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나튀김" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/bananamilk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananamilk"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/bananapancake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananapancake"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/bananayogurt"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bananayogurt"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나우유" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나팬케이크" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바나나요거트" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- 블루베리 -->
+        <TableLayout
+            android:id="@+id/blueberryTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/blueberry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberry"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/blueberrybread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberrybread"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/blueberrycereal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberrycereal"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리식빵" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리씨리얼" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/blueberrycerealbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberrycerealbar"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/blueberrycheong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberrycheong"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/blueberryjam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberryjam"
+                    android:gravity="bottom|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리씨리얼바" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리청" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리잼" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/blueberrypie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberrypie"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/blueberrytarte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberrytarte"
+                    android:gravity="bottom|center_horizontal"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/blueberryyogurt"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blueberryyogurt"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리파이" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리타르트" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="블루베리요거트" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- 파인애플 -->
+
+        <TableLayout
+            android:id="@+id/pineappleTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/pineapple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineapple"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/pineapplefried"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineapplefried"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/pineapplefriedrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineapplefriedrice"
+                    android:gravity="bottom|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플튀김" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플볶음밥" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/pineapplehawaiianpizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineapplehawaiianpizza"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/pineapplemakgeolli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineapplemakgeolli"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/pineapplemilk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineapplemilk"
+                    android:gravity="bottom|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="하와이안피자" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플막걸리" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플우유" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/pineappleskewered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineappleskewered"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/pineappleslicecan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineappleslicecan"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/pineapplesteak"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pineapplesteak"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플꼬치" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플통조림" />
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="파인애플스테이크" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- 복숭아 -->
+        <TableLayout
+            android:id="@+id/peachTable"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/peach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/peach"
+                    android:gravity="bottom|center_horizontal"
+
+                    />
+
+                <Button
+                    android:id="@+id/peachbread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachbread"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/peachcan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachcan"
+                    android:gravity="bottom|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아식빵" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아통조림" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/peachicecream"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachicecream"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/peachicetea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachicetea"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/peachmuffin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachmuffin"
+                    android:gravity="bottom|center_horizontal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아아이스크림" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아아이스티" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아머핀" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/peachpie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachpie"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/peachpudding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachpudding"
+                    android:gravity="bottom|center_horizontal" />
+
+                <Button
+                    android:id="@+id/peachsmoothie"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/peachsmoothie"
+                    android:gravity="bottom|center_horizontal" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아파이" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="복숭아푸딩" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="봉숭아스무디" />
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/onePage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fivePage"
+        android:background="#ffe4e1"
+        android:text="딸기" />
+
+    <Button
+        android:id="@+id/twoPage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sixPage"
+        android:layout_toRightOf="@id/onePage"
+        android:background="#b0e0e6"
+        android:text="토마토" />
+
+    <Button
+        android:id="@+id/threePage"
+        android:layout_toRightOf="@id/twoPage"
+        android:layout_above="@id/sevenPage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="#ffe4e1"
+        android:text="포도" />
+
+    <Button
+        android:id="@+id/fourPage"
+        android:layout_above="@id/eightPage"
+        android:layout_toRightOf="@id/threePage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="#b0e0e6"
+        android:text="망고" />
+
+    <Button
+        android:id="@+id/fivePage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progressBar"
+        android:background="#b0e0e6"
+        android:text="바나나" />
+
+    <Button
+        android:id="@+id/sixPage"
+        android:layout_above="@id/progressBar"
+        android:layout_toRightOf="@id/fivePage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="#ffe4e1"
+        android:text="블루베리" />
+
+    <Button
+        android:id="@+id/sevenPage"
+        android:layout_above="@id/progressBar"
+        android:layout_toRightOf="@id/sixPage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="#b0e0e6"
+        android:text="파인애플" />
+
+    <Button
+        android:id="@+id/eightPage"
+        android:layout_above="@id/progressBar"
+        android:layout_toRightOf="@id/sevenPage"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="#ffe4e1"
+        android:text="복숭아" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/textprogress"
+        android:max="72" />
+
+    <TextView
+        android:id="@+id/textprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="#666666" />
+
+</RelativeLayout>
